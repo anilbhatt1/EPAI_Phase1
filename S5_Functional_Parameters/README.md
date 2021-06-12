@@ -40,12 +40,12 @@
 
 - Assignment is as below.
 
-![Assignment](https://github.com/anilbhatt1/EPAI_Phase1/blob/master/S4_Numeric_Types_2/Assignment.jpg)
+![Assignment](https://github.com/anilbhatt1/EPAI_Phase1/blob/master/S5_Functional_Parameters/Assignment.png)
 
 ## Assignment Solution
 
 - File that holds required functions : S5_time_it.py
-- Github Location : 
+- Github Location : https://github.com/anilbhatt1/EPAI_Phase1/blob/master/S5_Functional_Parameters/S5_time_it.py
 - Following functions are implemented:
 - **time_it()**
     - time_it(fn, *args, repetition=1, **kwargs)
@@ -78,7 +78,7 @@
 ## Testing
 - All the above functions are tested using pytest.
 - Testcase file : **test_S5_time_it.py** (Please note that that 'test_' need to be prefixed for Pytest to automatically identify that it is a testcase file).
-- Github Location : https://github.com/anilbhatt1/EPAI_Phase1/blob/master/S4_Numeric_Types_2/test_S4_Qualean_Class.py
+- Github Location : https://github.com/anilbhatt1/EPAI_Phase1/blob/master/S5_Functional_Parameters/test_S5_time_it.py
 - Test case results are as shown below:
  
-![Test_Results](https://github.com/anilbhatt1/EPAI_Phase1/blob/master/S4_Numeric_Types_2/Testcase_Pass.jpg)
+![Test_Results](https://github.com/anilbhatt1/EPAI_Phase1/blob/master/S5_Functional_Parameters/pytest_snapshot.jpg)
