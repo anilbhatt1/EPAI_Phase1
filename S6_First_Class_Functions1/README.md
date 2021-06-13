@@ -3,7 +3,7 @@
 ## Notes
 
 - Notebook : **S6_First_Class_Functions1_Notes**
-- Location : 
+- Location : https://github.com/anilbhatt1/EPAI_Phase1/blob/master/S6_First_Class_Functions1/S6_First_Class_Functions1_Notes.ipynb
 #### Following topics are covered:
 - **Default Values in functions**
     - How to make value population dynamic inside a function eg: Using time
@@ -40,12 +40,12 @@
 
 - Assignment is as below.
 
-![Assignment]()
+![Assignment](https://github.com/anilbhatt1/EPAI_Phase1/blob/master/S6_First_Class_Functions1/Assignment.jpg)
 
 ## Assignment Solution
 
 - File that holds required functions : S6_deck_of_cards.py
-- Github Location : 
+- Github Location : https://github.com/anilbhatt1/EPAI_Phase1/blob/master/S6_First_Class_Functions1/S6_deck_of_cards.py
 - Following functions are implemented:
 - **create_deck_normal()**
     - Creating deck of 52 cards via normal function
@@ -57,7 +57,7 @@
 ## Testing
 - All the above functions are tested using pytest.
 - Testcase file : **test_S6_deck_of_cards.py** (Please note that that 'test_' need to be prefixed for Pytest to automatically identify that it is a testcase file).
-- Github Location : 
+- Github Location : https://github.com/anilbhatt1/EPAI_Phase1/blob/master/S6_First_Class_Functions1/test_S6_deck_of_cards.py
 - Test case results are as shown below:
  
-![Test_Results]()
+![Test_Results](https://github.com/anilbhatt1/EPAI_Phase1/blob/master/S6_First_Class_Functions1/pytest_snapshot.jpg)
