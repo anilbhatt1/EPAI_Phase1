@@ -5,3 +5,5 @@
     - Covers isclose(), trunc(), floor(), ceil(), round(), Decimals, Complex numbers, Booleans
  - **S5_Functional_Parameters**
     - Covers positional arguments, keyword arguments, unpacking using * and **, how to use *args and **kwargs 
+ - **S6_FirstClass_Functions**
+    - Covers Default Values, Docstrings, Annotations, lambda functions, functional introspection, callables, map, filter, zip , list comprehensions
