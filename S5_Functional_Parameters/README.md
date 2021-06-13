@@ -3,7 +3,7 @@
 ## Notes
 
 - Notebook : **S5_Functional_Parameters_Notes.ipynb**
-- Location : 
+- Location : https://github.com/anilbhatt1/EPAI_Phase1/blob/master/S5_Functional_Parameters/S5_Functional_Parameters_Notes.ipynb
 #### Following topics are covered:
 - **Arguments**
     - Positional arguments

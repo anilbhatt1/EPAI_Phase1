@@ -3,5 +3,5 @@
  - Respective sessions will be updated with relevant files and README.
  - **S4_Numeric_Types_2**
     - Covers isclose(), trunc(), floor(), ceil(), round(), Decimals, Complex numbers, Booleans
- - **S5_Functiona_Parameters**
+ - **S5_Functional_Parameters**
     - Covers positional arguments, keyword arguments, unpacking using * and **, how to use *args and **kwargs 
