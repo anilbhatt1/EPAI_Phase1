@@ -17,6 +17,10 @@ def test_check_doc_good():
     f1 = S8.check_doc(S8.add)
     assert f1 == 'Have enough documentation'
 
+    # Good > 50
+    f1 = S8.check_doc(S8.mul)
+    assert f1 == 'Have enough documentation'
+
     #Not a function
     x = 8
     f1 = S8.check_doc(x)
@@ -24,14 +28,20 @@ def test_check_doc_good():
 
 def test_fibonacci():
 
-    # Generating 2
+    # Generating 1
     fib = S8.next_fib()
     r = fib()
+    assert r == 'Next fibonacci number is 1', 'Not correct number'
+
+    # Generating 2
     r = fib()
     assert r == 'Next fibonacci number is 2', 'Not correct number'
 
-    # Generating 8
+    # Generating 3
     r = fib()
+    assert r == 'Next fibonacci number is 3', 'Not correct number'
+
+    # Generating 5
     r = fib()
     assert r =='Next fibonacci number is 5', 'Not correct number'
 
@@ -43,15 +53,40 @@ def test_fibonacci():
         assert r == 'Next fibonacci number is ' + str(i), 'Not correct number'
 
 def test_ctr_only_func_as_arg():
-    test_dict = {'add':10, 'mul':10, 'div':10}
+    test_dict = {'add':11, 'mul':11, 'div':11}
     ctr_add = S8.ctr_dict_fn_only_arg(S8.add)
     ctr_mul = S8.ctr_dict_fn_only_arg(S8.mul)
     ctr_div = S8.ctr_dict_fn_only_arg(S8.div)
+
+    r = ctr_add(1,2)
+    assert r == 3, 'Incorrect addition'
+    assert S8.cnt_dict['add'] == 1, 'Incorrect add counter'
+
+    r = ctr_mul(5,2)
+    assert r == 10, 'Incorrect multiply'
+    assert S8.cnt_dict['mul']  == 1, 'Incorrect mul counter'
+
+    r = ctr_div(10,2)
+    assert r == 5, 'Incorrect division'
+    assert S8.cnt_dict['div']  == 1, 'Incorrect div counter'
+
     for i in range(10):
         ctr_add(1, 2)
         ctr_mul(5, 2)
         ctr_div(6, 2)
     assert test_dict == S8.cnt_dict
+
+    for i in range(5):
+        ctr_add(1, 2)
+    assert S8.cnt_dict['add'] == 16
+
+    for i in range(6):
+        ctr_mul(1, 2)
+    assert S8.cnt_dict['mul'] == 17
+
+    for i in range(7):
+        ctr_div(1, 2)
+    assert S8.cnt_dict['div'] == 18
 
 def test_ctr_dict_func_as_arg():
 
