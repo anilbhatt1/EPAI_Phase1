@@ -70,6 +70,29 @@ def assign_b(valu):
     b = valu
     return b
 
+cnt_dict = {'add':0, 'mul':0, 'div':0}
+def ctr_dict_fn_only_arg(fn):
+    """
+    This is a function that accepts another function. Then it updates a dictionary that keeps couunt of each function
+    being called.
+    This is a closure.
+    """
+    cnt = cnt_dict[fn.__name__]
+    def update(*args, **kwargs)->(int, dict):
+        """
+        This function accepts another function, executes that function and also increases the counter.
+        If there is no entry for a particular function, entry for the same is created in dictionary and
+        then counter is updated.
+        """
+        nonlocal cnt
+        cnt += 1
+
+        cnt_dict[fn.__name__] = cnt
+        return fn(*args, **kwargs)
+
+    return update
+
+
 def ctr_dict(fn, func_dict)->(int, dict):
     """
     This is a function that accepts another function & dictionary that is used to keep track of how many times that particular

@@ -42,7 +42,18 @@ def test_fibonacci():
         r = fib()
         assert r == 'Next fibonacci number is ' + str(i), 'Not correct number'
 
-def test_ctr():
+def test_ctr_only_func_as_arg():
+    test_dict = {'add':10, 'mul':10, 'div':10}
+    ctr_add = S8.ctr_dict_fn_only_arg(S8.add)
+    ctr_mul = S8.ctr_dict_fn_only_arg(S8.mul)
+    ctr_div = S8.ctr_dict_fn_only_arg(S8.div)
+    for i in range(10):
+        ctr_add(1, 2)
+        ctr_mul(5, 2)
+        ctr_div(6, 2)
+    assert test_dict == S8.cnt_dict
+
+def test_ctr_dict_func_as_arg():
 
     global fn_dict
     fn_dict = {}
