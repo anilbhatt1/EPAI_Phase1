@@ -7,3 +7,7 @@
     - Covers positional arguments, keyword arguments, unpacking using * and **, how to use *args and **kwargs 
  - **S6_FirstClass_Functions**
     - Covers Default Values, Docstrings, Annotations, lambda functions, functional introspection, callables, map, filter, zip , list comprehensions
+ - **S8_Closures**
+    - Covers Built-in scope, global scope, local scope, non-local scope, 'global' and 'nonlocal' keywords, closures, free-variables, closures as replacement to classes
+ - **S9_Decorators**
+    - Covers decorators, @wraps, Stacking of decorators, Memoization, lru_cache(), Parametrized decorators/decorators factory, Monkey Patching, HTMLizing, Single Dispatch
