@@ -1,4 +1,4 @@
-#Decorators
+# Decorators
 
 ## Notes
 
@@ -28,7 +28,7 @@
 
 - Assignment corresponding to EPAI-1.0 is as below.
 
-![Assignment]()
+![Assignment](https://github.com/anilbhatt1/EPAI_Phase1/blob/master/S9_Decorators/EPA1_Assign.jpg)
 
 ## Assignment(EPAI 1.0/2.0) Solution
 
@@ -77,7 +77,7 @@ https://github.com/anilbhatt1/EPAI_Phase1/blob/master/S9_Decorators/Decorators_A
 
 - Assignment corresponding to EPAI-3.0 is as below.
 
-![Assignment]()
+![Assignment](https://github.com/anilbhatt1/EPAI_Phase1/blob/master/S9_Decorators/EPA3_Assign.jpg)
 
 ## Assignment(EPAI 3.0) Solution
 
