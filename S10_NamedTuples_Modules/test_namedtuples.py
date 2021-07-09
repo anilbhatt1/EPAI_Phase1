@@ -153,6 +153,26 @@ def test_average_age_d():
     avg_age_dt = average_age_d(all_profiles_d)
     assert avg_age_dt[0] == avg_age_d, "Average age derived from dictionary not matching"
 
+# Prove that namedtuple is faster than dictionary
+def test_compare_common_blood_type():
+    common_blood_dict  = common_blood_type_d(all_profiles_d)
+    common_blood_tuple = common_blood_type(all_profiles)
+    assert common_blood_tuple[1] < common_blood_dict[1], 'Named tuple took more time to find common blood group'
+
+def test_compare_mean_current_loc():
+    mean_loc_dict, elapsed_d = mean_current_loc_d(all_profiles_d)
+    mean_loc_tup, elapsed_t  = mean_current_loc(all_profiles)
+    assert elapsed_t < elapsed_d, 'Named tuple took more time to find mean location'
+
+def test_compare_oldest_person_age():
+    oldest_age_dict  = oldest_person_age_d(all_profiles_d)
+    oldest_age_tuple = oldest_person_age(all_profiles)
+    assert oldest_age_tuple[1] < oldest_age_dict[1], 'Named tuple took more time to find oldest person age'
+
+def test_compare_average_age():
+    avg_age_dict  = average_age_d(all_profiles_d)
+    avg_age_tuple = average_age(all_profiles)
+    assert avg_age_tuple[1] < avg_age_dict[1], 'Named tuple took more time to find average age'
 '''
 Create fake data (you can use Faker for company names) for imaginary stock exchange for top 100 companies (name, symbol, open, high, close). 
 Assign a random weight to all the companies. Calculate and show what value the stock market started at, what was the highest value during 
@@ -221,6 +241,5 @@ def test_max_weight_fail():
 
 def test_duplicate_symbols():
     lst = list(map(lambda comp:comp[1], top_100))
-    print(lst)
     assert len(lst) == len(set(lst)), 'Duplicate symbols among companies listed !'
 

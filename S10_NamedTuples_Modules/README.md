@@ -26,7 +26,7 @@
 
 - Assignment is as below.
 
-![Assignment]()
+![Assignment](https://github.com/anilbhatt1/EPAI_Phase1/blob/master/S10_NamedTuples_Modules/Assignment.png)
 
 ## Assignment Solution
 
@@ -87,3 +87,5 @@ https://github.com/anilbhatt1/EPAI_Phase1/blob/master/S10_NamedTuples_Modules/Na
 - All the above functions are tested using pytest.
 - Testcase file : **test_namedtuples.py** (Please note that that 'test_' need to be prefixed for Pytest to automatically identify that it is a testcase file).
 - Github Location : https://github.com/anilbhatt1/EPAI_Phase1/blob/master/S10_NamedTuples_Modules/test_namedtuples.py
+- Test snapshot results as below:
+![Test_Pass]()
