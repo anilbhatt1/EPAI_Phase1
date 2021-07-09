@@ -3,7 +3,7 @@
 ## Notes
 
 - Notebook : **Tuples_NamedTuples_Notes.ipynb**
-- Location : 
+- Location : https://github.com/anilbhatt1/EPAI_Phase1/blob/master/S10_NamedTuples_Modules/Tuples_NamedTuples_Notes.ipynb
 #### Following topics are covered:
 - **Dummy variables in tuples**
     - Can use only one  *_  in tuple unpacking
@@ -31,7 +31,7 @@
 ## Assignment Solution
 
 - File that holds required functions : namedtuples.py
-- Github Location : 
+- Github Location : https://github.com/anilbhatt1/EPAI_Phase1/blob/master/S10_NamedTuples_Modules/namedtuples.py
 - Following functions are implemented:
 - **common_blood_type()**
     - This function will accept a named tuple.
@@ -81,9 +81,9 @@
     - This function will sum of highest stock values, sum of values with which stocks opened and sum of values with which stocks closed out of the 'n' companies provided in named tuple.
 
 - Draft Jupyter version where assignment was initially tried out can be found below:
-
+https://github.com/anilbhatt1/EPAI_Phase1/blob/master/S10_NamedTuples_Modules/Named_Tuples_Assignment_Draft.ipynb
 
 ## Testing
 - All the above functions are tested using pytest.
 - Testcase file : **test_namedtuples.py** (Please note that that 'test_' need to be prefixed for Pytest to automatically identify that it is a testcase file).
-- Github Location : 
+- Github Location : https://github.com/anilbhatt1/EPAI_Phase1/blob/master/S10_NamedTuples_Modules/test_namedtuples.py
