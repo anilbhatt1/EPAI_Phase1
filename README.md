@@ -11,3 +11,5 @@
     - Covers Built-in scope, global scope, local scope, non-local scope, 'global' and 'nonlocal' keywords, closures, free-variables, closures as replacement to classes
  - **S9_Decorators**
     - Covers decorators, @wraps, Stacking of decorators, Memoization, lru_cache(), Parametrized decorators/decorators factory, Monkey Patching, HTMLizing, Single Dispatch
+ - **S10_NamedTuples_Modules**
+    - Covers dummy variables in tuples, Importance of '__repr__' while defining classes, Strings & tuples are immutable, enumerate, named tuples, Faker to create fake data, How to use namedtuple to create another namedtuple   
