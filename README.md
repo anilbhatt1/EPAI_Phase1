@@ -12,4 +12,10 @@
  - **S9_Decorators**
     - Covers decorators, @wraps, Stacking of decorators, Memoization, lru_cache(), Parametrized decorators/decorators factory, Monkey Patching, HTMLizing, Single Dispatch
  - **S10_NamedTuples_Modules**
-    - Covers dummy variables in tuples, Importance of '__repr__' while defining classes, Strings & tuples are immutable, enumerate, named tuples, Faker to create fake data, How to use namedtuple to create another namedtuple   
+    - Covers dummy variables in tuples, Importance of '__repr__' while defining classes, Strings & tuples are immutable, enumerate, named tuples, Faker to create fake data, How to use namedtuple to create another namedtuple
+ - **S13_Sequence_Types**
+    - Covers Sequence types are indexable, All sequence types will be iterable, All iterables are not sequence types eg: sets
+    - Can use 'in' with iterables, Can use 'min' and 'max' with iterables, Concatenation, How to convert a string to list, How to convert a list to string using 'join'
+    - Using * operator for repetition eg: 'abc'*2 = 'abcabc' , Finding position using index
+    - Slicing, list.append(), list.extend(), How to delete an element from list, Shallow Copy vs Deep Copy, Tuples are highly performant than lists 
+    - Storage efficiency, Slice type, Building custom sequence types, Inplace concatenation & repetition, Sorting sequences   
