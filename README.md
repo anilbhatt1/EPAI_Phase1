@@ -18,4 +18,9 @@
     - Can use 'in' with iterables, Can use 'min' and 'max' with iterables, Concatenation, How to convert a string to list, How to convert a list to string using 'join'
     - Using * operator for repetition eg: 'abc'*2 = 'abcabc' , Finding position using index
     - Slicing, list.append(), list.extend(), How to delete an element from list, Shallow Copy vs Deep Copy, Tuples are highly performant than lists 
-    - Storage efficiency, Slice type, Building custom sequence types, Inplace concatenation & repetition, Sorting sequences   
+    - Storage efficiency, Slice type, Building custom sequence types, Inplace concatenation & repetition, Sorting sequences
+   **S14_Iterables_Iterators**
+    - List Comprehensions, Iteration using next_ method, Iterators, Iterators and iterables 
+    - Consuming iterators manually, Cyclic Iterators, Lazy Iterables
+    - Iterators in file handling, f.readline(), f.readlines()
+    - Sorting Iterables, Iterating Callables, Delegating Iterators, Reversed Iteration, Reversing Sequences   

@@ -1,4 +1,7 @@
 from polygon import polygon
+from functools import l
+import polygon
+from polygon import polygon
 from functools import lru_cache
 
 class poly_seq:
