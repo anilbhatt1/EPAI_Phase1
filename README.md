@@ -23,4 +23,12 @@
     - List Comprehensions, Iteration using next_ method, Iterators, Iterators and iterables 
     - Consuming iterators manually, Cyclic Iterators, Lazy Iterables
     - Iterators in file handling, f.readline(), f.readlines()
-    - Sorting Iterables, Iterating Callables, Delegating Iterators, Reversed Iteration, Reversing Sequences   
+    - Sorting Iterables, Iterating Callables, Delegating Iterators, Reversed Iteration, Reversing Sequences
+ - **S15_Generators**
+    - Relevance of 'iter' and 'next' while defining iterators, Creating an iterator using closure
+    - **yield**, How to enable **stopiteration** using **yield**, Example of generator using Fibonacci series
+    - Making an iterable from generator (that wont exhaust), Beware of using a generator with another generator. Example using enumerate.
+    - Generator expressions ( ), **yield from** - Usecase using cars.csv
+    - **Aggregators** - list, sum, min, max, all, any
+    - Slicing iterables - **islice**, Selecting & filtering iterators - **filter** and **filterfalse**
+    - **dropwhile and takewhile**, **compress**   
