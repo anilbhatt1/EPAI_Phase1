@@ -32,3 +32,13 @@
     - **Aggregators** - list, sum, min, max, all, any
     - Slicing iterables - **islice**, Selecting & filtering iterators - **filter** and **filterfalse**
     - **dropwhile and takewhile**, **compress**   
+ - **S16_Context_Managers**
+    - try, except finally
+    - **with** - Context manager
+    - Context managers using 'enter' and 'exit'
+    - Generators and context managers
+        - Context manager with generator - Usecase for reading & writing file
+        - Inbuilt **contextmanager**
+        - Using inbuilt **contextmanager** for reading & writing file
+        - Using inbuilt **contextmanager** for timer functions
+        
