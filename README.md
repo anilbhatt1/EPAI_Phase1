@@ -16,7 +16,9 @@
  - **S11_Modules**
     - globals(), sys.modules(), __ spec__
     - Creating own module via **types.ModuleType()**
-    - sys.prefix, sys.path, **How Python imports a module from file**
+    - **sys.prefix** : This gives path from where python is running
+    - **sys.path** :   This **lists the library paths where python will search** for a module while importing it
+    - **How Python imports a module from file**
     - **__ name __** will show as **main** when displayed from inside the file
     - How to check if an **imported module is part of a package** -> Source from which module is imported will be having **__ init__.py**
     - Convert a variable string as a module using **importlib.import_module**, **Loaders** 

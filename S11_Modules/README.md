@@ -96,22 +96,43 @@
         - main module 
         - This calls j2p.py, p2j.py, image_resize.py and image_crop.py based on convert option given
     - j2p.py  
-        - This converts jpg/jpeg image or folderto png
+        - This converts jpg/jpeg image or folder to png
+        - Usage:
+            - python convert_app.zip convert --convert_type j2p --image_name sample_jpg.jpg
+            - python convert_app.zip convert --convert_type j2p --folder_name Sample_Images
     - p2j.py 
         - This converts png image or folder to jpg
+        - Usage:
+            - python convert_app.zip convert --convert_type p2j --image_name sample_png.png
+            - python convert_app.zip convert --convert_type p2j --folder_name Sample_Images
     - image_resize.py
         - Following options are available
             - **res_p** : Resizes the image/folder for given percent (0 to 1). Upsizing not enabled.
+                - Usage:
+                    - python convert_app.zip resize --resize_type res_p --resize_percent 0.85 --image_name sample_png.png
+                    - python convert_app.zip resize --resize_type res_p --resize_percent 0.85 --folder_name Sample_Images
             - **res_w** : Resizes the image/folder for given width. Height adjusted as per aspect ratio.
+                - Usage:
+                    - python convert_app.zip resize --resize_type res_w --resize_width 1064 --image_name sample_png.png
+                    - python convert_app.zip resize --resize_type res_w --resize_width 1064 --folder_name Sample_Images
             - **res_h** : Resizes the image/folder for given height. Width adjusted as per aspect ratio.
+                - Usage:
+                    - python convert_app.zip resize --resize_type res_h --resize_height 100 --image_name sample_png.png
+                    - python convert_app.zip resize --resize_type res_h --resize_height 100 --folder_name Sample_Images
     - image_crop.py
         - Following crop options are available
             - **crp_p** : Crops the image/folder for given percent (0 to 1).
+                - Usage:
+                    - python convert_app.zip crop --crop_type crp_p --crop_percent 0.5 --image_name sample_jpg.jpg
+                    - python convert_app.zip crop --crop_type crp_p --crop_percent 0.5 --folder_name Sample_Images
             - **crp_px** : 
                 - Crops the image/folder for given pixel values.
                 - Square/rectangle crop can be done.
                 - Pixel input should be in format -> left, upper, right, lower
                     - eg: for 1064 x 1064 to be square cropped to 224 x 224 we should give pixel values  as 420 420 644 644
+                - Usage :
+                    - python convert_app.zip crop --crop_type crp_p --crop_pixels 420 420 644 644 --image_name sample_jpg.jpg
+                    - python convert_app.zip crop --crop_type crp_p --crop_pixels 420 420 644 644 --folder_name Sample_Images
     - convert_app.zip
         - Created via command **python -m zipfile -c convert_app.zip __ main__.py j2p.py p2j.py image_crop.py image_resize.py**
         - Invoked via command **python convert_app.zip resize --resize_type res_w --resize_width 1064 --folder_name Val_Images**
