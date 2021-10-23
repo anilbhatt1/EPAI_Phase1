@@ -13,6 +13,24 @@
     - Covers decorators, @wraps, Stacking of decorators, Memoization, lru_cache(), Parametrized decorators/decorators factory, Monkey Patching, HTMLizing, Single Dispatch
  - **S10_NamedTuples_Modules**
     - Covers dummy variables in tuples, Importance of '__repr__' while defining classes, Strings & tuples are immutable, enumerate, named tuples, Faker to create fake data, How to use namedtuple to create another namedtuple
+ - **S11_Modules**
+    - globals(), sys.modules(), __ spec__
+    - Creating own module via **types.ModuleType()**
+    - sys.prefix, sys.path, **How Python imports a module from file**
+    - **__ name __** will show as **main** when displayed from inside the file
+    - How to check if an **imported module is part of a package** -> Source from which module is imported will be having **__ init__.py**
+    - Convert a variable string as a module using **importlib.import_module**, **Loaders** 
+    - **importlib.util.find_spec** : Helps to see the **spec** of a module **without importing it**
+    - How to **import a module** present in a directory **outside present working directory** -> Add the **directory location** of module to **sys.path**
+    - **Various type of imports**
+        - Type 1 : **import math**
+        - Type 2 : **import numpy as np**
+        - Type 3 : **from cmath import polar**
+        - Type 4 : **from cmath import sin as c_sin** OR   **from math import sin as sin**
+        - Type 5 : **from fractions import**
+    - **argparse**  Helps to run a python program from cmd supplying the arguments
+    - How to zip the python modules from a folder & list the contents in it
+    - How to make an application using **__ main__.py**
  - **S13_Sequence_Types**
     - Covers Sequence types are indexable, All sequence types will be iterable, All iterables are not sequence types eg: sets
     - Can use 'in' with iterables, Can use 'min' and 'max' with iterables, Concatenation, How to convert a string to list, How to convert a list to string using 'join'
