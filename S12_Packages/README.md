@@ -1,10 +1,5 @@
 # Packages
 
-## Notes
-
-- Notebook : **Modules_Notes.ipynb**
-- Location : https://github.com/anilbhatt1/EPAI_Phase1/blob/master/S11_Modules/Modules_Notes.ipynb
-
 #### Following topics are covered:
 
 - Packages are modules, but not all modules are packages
@@ -56,7 +51,7 @@ path** as shown below.
 ![all](https://github.com/anilbhatt1/EPAI_Phase1/blob/master/S12_Packages/all.png)
 
 - We can also give combination of **all** from various subpackages in main init.py like below.
-- Check second_package_imports/package_imports/common/models and second_package_imports/package_imports/main.py 
+- Check **second_package_imports/package_imports/common/models** and **second_package_imports/package_imports/main.py** 
 to understand the usage and convenience we can achieve through this.
     __all__ = (posts_pkg.__all__ +
             users_pkg.__all__) 
