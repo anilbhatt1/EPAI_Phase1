@@ -33,6 +33,10 @@
     - **argparse**  Helps to run a python program from cmd supplying the arguments
     - How to zip the python modules from a folder & list the contents in it
     - How to make an application using **__ main__.py**
+ - **S12_Packages**
+    - How import statements work via **__init __.py**
+    - How to give relative path for import statements
+    - How we can expose certain functions while blocking remaining ones via **__all __*** inside init.py
  - **S13_Sequence_Types**
     - Covers Sequence types are indexable, All sequence types will be iterable, All iterables are not sequence types eg: sets
     - Can use 'in' with iterables, Can use 'min' and 'max' with iterables, Concatenation, How to convert a string to list, How to convert a list to string using 'join'

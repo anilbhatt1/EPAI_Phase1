@@ -55,6 +55,79 @@ path** as shown below.
 to understand the usage and convenience we can achieve through this.
     __all__ = (posts_pkg.__all__ +
             users_pkg.__all__) 
+            
+## Assignment(EPAI 1.0)
+
+- Assignment is as below.
+
+![Assignment](https://github.com/anilbhatt1/EPAI_Phase1/blob/master/S12_Packages/Assignment.png)
+
+## Assignment Solution
+
+- Files that holds required functions :
+    - __init__.py (Inside 'calculator' folder)
+        - Have import statements for cos, e, log, relu, sin, softmax, tan, tanh functions
+        - Derivative functions are excluded by giving __all__ statement
+        - These regular functions will get exposed if we give **import calculator**
+    - derivatives.py (Inside 'calculator' folder)
+        - Have import statements for derivatives of cos, e, log, relu, sin, softmax, tan, tanh 
+        - Derivative functions can be used only if we give **import derivatives**
+    - utils.py (Inside 'calculator' folder)
+        - Have decorator **f_string_print** that will help to wrap the below functions
+        - Purpose is to give a f print statement as output
+        - All the regular functions and their derivatives are wrapped with decorator f_string_print
+    - check_calculator.py (Inside 's12_Packages' folder)
+        - Basic python file to do a quick check if imports are working correctly
+        - Regular functions should become available via **import calculator**
+        - Derivative functions must not work if we merely give **import calculator**
+        - Derivative functions should become available once we give **import derivatives**
+    - cos.py (Inside 'calculator' folder)
+        - This calls cos, cos_der functions. 
+        - Only cos will be exposed if we give **import calculator**
+        - cos_der will get exposed only if we give **import derivatives**
+    - e.py  (Inside 'calculator' folder)
+        - This calls e, e_der functions. 
+        - Only e will be exposed if we give **import calculator**
+        - e_der will get exposed only if we give **import derivatives**
+    - log.py (Inside 'calculator' folder)
+        - This calls log, log_der functions. 
+        - Only log will be exposed if we give **import calculator**
+        - log_der will get exposed only if we give **import derivatives**
+    - relu.py (Inside 'calculator' folder)
+        - This calls relu, relu_der functions. 
+        - Only relu will be exposed if we give **import calculator**
+        - relu_der will get exposed only if we give **import derivatives**
+    - sin.py (Inside 'calculator' folder)
+        - This calls sin, sin_der functions. 
+        - Only sin will be exposed if we give **import calculator**
+        - sin_der will get exposed only if we give **import derivatives**    
+    - softmax.py (Inside 'calculator' folder)
+        - This calls softmax, softmax_der functions. 
+        - Only softmax will be exposed if we give **import calculator**
+        - softmax_der will get exposed only if we give **import derivatives**
+    - tan.py (Inside 'calculator' folder)
+        - This calls tan, tan_der functions. 
+        - Only tan will be exposed if we give **import calculator**
+        - tan_der will get exposed only if we give **import derivatives**    
+    - tanh.py (Inside 'calculator' folder)
+        - This calls tanh, tanh_der functions. 
+        - Only tanh will be exposed if we give **import calculator**
+        - tanh_der will get exposed only if we give **import derivatives**       
+                 
+- Github Locations : 
+    - sin, cos, tan, tanh, e, log, softmax, relu, init, deriavtives and utils.py can be found in below location.
+    - https://github.com/anilbhatt1/EPAI_Phase1/blob/master/S12_Packages/calculator
+    - https://github.com/anilbhatt1/EPAI_Phase1/blob/master/S12_Packages/check_calculator.py
+
+- Draft Jupyter version where assignment was initially tried out can be found below:
+https://github.com/anilbhatt1/EPAI_Phase1/blob/master/S12_Packages/Assignment_Draft.ipynb
+
+## Testing
+- All the above functions are tested using pytest.
+- Testcase file : **test_calculator.py** (Please note that that 'test_' need to be prefixed for Pytest to automatically identify that it is a testcase file).
+- Github Location : https://github.com/anilbhatt1/EPAI_Phase1/blob/master/S12_Packages/test_calculator.py
+- Test snapshot results as below:
+![Test_Pass](https://github.com/anilbhatt1/EPAI_Phase1/blob/master/S12_Packages/Test_Passed_Snapshot.png)
 
 
  

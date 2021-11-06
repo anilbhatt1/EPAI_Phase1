@@ -83,7 +83,7 @@
     - Using **subprocess.run()** to execute cmd commands
     - How to use **stdout=subprocess.PIPE** , **stderr=subprocess.PIPE** to display output of **subprocess.run()**    
 
-## Assignment(EPAI 1.0/2.0/3.0)
+## Assignment(EPAI 1.0)
 
 - Assignment is as below.
 
@@ -152,6 +152,6 @@ https://github.com/anilbhatt1/EPAI_Phase1/blob/master/S11_Modules/Assignment_Dra
 - All the above functions are tested using pytest.
 - Testcase file : **test_convert_app.py** (Please note that that 'test_' need to be prefixed for Pytest to automatically identify that it is a testcase file).
 - This py file also shows how **subprocess** can be used to **run()** python cmd commands
-- Github Location : https://github.com/anilbhatt1/EPAI_Phase1/blob/master/S11_Modules/test_convert_app.pyy
+- Github Location : https://github.com/anilbhatt1/EPAI_Phase1/blob/master/S11_Modules/test_convert_app.py
 - Test snapshot results as below:
 ![Test_Pass](https://github.com/anilbhatt1/EPAI_Phase1/blob/master/S11_Modules/Test_Passed_Snapshot.png)
